@@ -1,0 +1,115 @@
+.card-wrapper {
+    position: relative;
+    max-width: 1300px;
+    max-height: 800px;
+}
+
+
+.dim-card {
+    position: absolute;
+    top: 30px;
+    width: 280px;
+    height: 104px;
+    background: #333333;
+    border-radius: 0px 0px 7px 7px;
+    list-style: none;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dim-card.closed {
+    visibility: hidden;
+}
+
+.dim-card p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.dim-card span{
+    color: red;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.dim-card li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.dim-card li div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 1rem 0;
+}
+
+.dim-card li label {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    font-family: 'Inter';
+    color: #828282;
+    gap: 10px;
+}
+
+.dim-card li label input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.dim-card svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.dim-card svg:hover path, #locked-icon path, .locked-icon path{
+    fill: #fff;
+}
+
+.card {
+    position: relative;
+    border-radius: 0px 0px 7px 7px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    max-height: 800px;
+    background-color: #FFFFFF;
+}
+
+#card-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+#card-img[src] {
+    display: block;
+}
